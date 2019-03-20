@@ -1,0 +1,33 @@
+
+
+nav { 
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    background-color: #FDB927;
+    color: #552583;
+    position: fixed;
+    padding-left: 2em;
+    padding-right: 2em;
+    float: left;
+      
+    }
+
+img.logo {
+    height: 80px;
+    width: 80px;
+    float: left;
+}
+
+span.header {
+    padding: 10px;
+    font-size: 300%;
+    line-height: 80px
+
+}
+
+
+
+
+
+      
