@@ -3,16 +3,15 @@ h2 {
     margin-right: 0.5em;
     margin-left: 0.5em;
     padding-top: 15px;
+    color: #552583;
 }
 
 section.new-tweet {
-    background-color: lightgrey;
+    background-color: #E9DEFF;
     margin-left: 2em;
     margin-right: 2em;
     height: 160px;
     border-radius: 10px;
- 
-
 }
 
 span.counter {
@@ -21,12 +20,15 @@ span.counter {
        padding-top: 5px;
 }
 .negcountercolor {
-    color: red
+    color: red;
 }
 
 form {
     margin-left: 0.7em;
-    
+    color: #552583;
+}
+input {
+    color: #000000;
 }
 
 textarea {

@@ -12,7 +12,7 @@ section.tweets {
         border-radius: 10px; */
     }
 section.tweets article{
-              background-color: lightgrey;
+              background-color: #E0E0E0;
               border-radius: 10px 10px 10px 10px;
               opacity: 0.7;
             }
@@ -24,7 +24,15 @@ section.tweets article:hover {
 section.tweets header {
               background-color : #552583;
               border-radius: 10px 10px 0 0;
+              display: flex;
+              width: 100%;
+              justify-content: space-between;
+              align-items: flex-end;
             }
+section.tweets div.avatar {
+    flex: 2 1 auto;
+    margin-left: 5px;
+}
 section.tweets img {
            vertical-align: left;
            width: 35px;
@@ -34,8 +42,9 @@ section.tweets img {
            margin-top : 0.4em;
            }
 section.tweets h3 {
-        float: left;
-        margin-right: 0.5em;
+        /* margin-right: 0.5em; */
+        margin: 0;
+        margin-bottom: 5px;
         padding-left: 0.7em;
         color: #FDB927;
        }
@@ -50,10 +59,14 @@ section.tweets footer p {
             padding-bottom: 10px;
             margin-right: 10px;
             display : inline-block;
-            color: #FDB927;
+            color: whitesmoke;
         }
 section.tweets header p {
               display : inline-block;
-              float: right;
               margin-right: 10px;
+              color: #FDB927;
               }
+
+section.tweets p {
+                padding-left: 5px;
+}

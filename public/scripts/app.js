@@ -5,7 +5,7 @@ $(document).ready(function () {
 
     function createTweetElement(tweet) {
 
-        return `<article class="tweet"><header><h3>  ${tweet.user.name}  </h3><img src=${tweet.user.avatars.small}> <p>${tweet.user.handle}</p ></header > <p>${tweet.content.text}</p> <footer><p>${tweet.created_at}</p></footer></article > `;
+        return `<article class="tweet"><header><h3>  ${tweet.user.name}  </h3><div class="avatar"><img src=${tweet.user.avatars.small}></div> <p>${tweet.user.handle}</p ></header > <p>${tweet.content.text}</p> <footer><p>${tweet.created_at}</p></footer></article > `;
 
     }
 
@@ -61,10 +61,18 @@ $(document).ready(function () {
 
     function renderTweets(tweets) {
         for (let tweet of tweets) {
-            var tweetHtml = createTweetElement(tweet);
+            let tweetHtml = createTweetElement(tweet);
             $("section.tweets").append(tweetHtml);
         }
     }
     renderTweets(data)
+
+
+    $(".submitTweet").click((event) => {
+        event.preventDefault();
+        let form = $('.submitForm');
+        let formSerial = form.serialize();
+        $.ajax('/tweets', { method: 'POST', data: formSerial })
+    })
 
 });
