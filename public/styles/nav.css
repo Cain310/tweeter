@@ -10,6 +10,7 @@ nav {
     padding-left: 2em;
     padding-right: 2em;
     float: left;
+    font-family: 'Roboto Condensed', sans-serif;
       
     }
 
@@ -21,9 +22,21 @@ img.logo {
 
 span.header {
     padding: 10px;
-    font-size: 300%;
+    font-size: 250%;
     line-height: 80px
 
+}
+
+#nav-bar input {
+    background-color: lightgrey;
+                  float:right;
+                  margin-top: 14.5px;
+                  margin-bottom: 35px;
+                  margin-right: auto;
+                  height: 50px;
+                  width: 120px;
+                  border-radius: 10px
+                  
 }
 
 
